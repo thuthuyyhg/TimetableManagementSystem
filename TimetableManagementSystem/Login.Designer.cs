@@ -126,7 +126,7 @@ namespace TimetableManagementSystem
             "Staff"});
             this.cbbRole.Location = new System.Drawing.Point(145, 254);
             this.cbbRole.Name = "cbbRole";
-            this.cbbRole.Size = new System.Drawing.Size(204, 21);
+            this.cbbRole.Size = new System.Drawing.Size(95, 21);
             this.cbbRole.TabIndex = 5;
             // 
             // label4

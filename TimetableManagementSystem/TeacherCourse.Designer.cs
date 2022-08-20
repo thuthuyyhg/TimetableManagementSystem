@@ -51,6 +51,7 @@ namespace TimetableManagementSystem
             this.Room = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DGWStaff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +59,7 @@ namespace TimetableManagementSystem
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(105, 186);
+            this.label4.Location = new System.Drawing.Point(68, 198);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 13);
             this.label4.TabIndex = 5;
@@ -67,7 +68,7 @@ namespace TimetableManagementSystem
             // chkAttend
             // 
             this.chkAttend.AutoSize = true;
-            this.chkAttend.Location = new System.Drawing.Point(230, 185);
+            this.chkAttend.Location = new System.Drawing.Point(193, 197);
             this.chkAttend.Name = "chkAttend";
             this.chkAttend.Size = new System.Drawing.Size(15, 14);
             this.chkAttend.TabIndex = 6;
@@ -75,15 +76,15 @@ namespace TimetableManagementSystem
             // 
             // txtTeacherID
             // 
-            this.txtTeacherID.Location = new System.Drawing.Point(230, 99);
+            this.txtTeacherID.Location = new System.Drawing.Point(193, 111);
             this.txtTeacherID.Name = "txtTeacherID";
-            this.txtTeacherID.Size = new System.Drawing.Size(276, 20);
+            this.txtTeacherID.Size = new System.Drawing.Size(122, 20);
             this.txtTeacherID.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(105, 102);
+            this.label3.Location = new System.Drawing.Point(68, 114);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 1;
@@ -91,16 +92,16 @@ namespace TimetableManagementSystem
             // 
             // txtCourseID
             // 
-            this.txtCourseID.Location = new System.Drawing.Point(230, 140);
+            this.txtCourseID.Location = new System.Drawing.Point(193, 152);
             this.txtCourseID.Name = "txtCourseID";
-            this.txtCourseID.Size = new System.Drawing.Size(276, 20);
+            this.txtCourseID.Size = new System.Drawing.Size(122, 20);
             this.txtCourseID.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(371, 22);
+            this.label1.Location = new System.Drawing.Point(334, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(288, 24);
             this.label1.TabIndex = 0;
@@ -108,7 +109,7 @@ namespace TimetableManagementSystem
             // 
             // btnWithdraw
             // 
-            this.btnWithdraw.Location = new System.Drawing.Point(684, 119);
+            this.btnWithdraw.Location = new System.Drawing.Point(513, 132);
             this.btnWithdraw.Name = "btnWithdraw";
             this.btnWithdraw.Size = new System.Drawing.Size(124, 23);
             this.btnWithdraw.TabIndex = 8;
@@ -118,7 +119,7 @@ namespace TimetableManagementSystem
             // 
             // btnJoin
             // 
-            this.btnJoin.Location = new System.Drawing.Point(540, 119);
+            this.btnJoin.Location = new System.Drawing.Point(369, 132);
             this.btnJoin.Name = "btnJoin";
             this.btnJoin.Size = new System.Drawing.Size(124, 23);
             this.btnJoin.TabIndex = 7;
@@ -129,7 +130,7 @@ namespace TimetableManagementSystem
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(105, 147);
+            this.label2.Location = new System.Drawing.Point(68, 159);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 3;
@@ -138,7 +139,7 @@ namespace TimetableManagementSystem
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(107, 246);
+            this.label9.Location = new System.Drawing.Point(66, 240);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(108, 13);
             this.label9.TabIndex = 9;
@@ -146,9 +147,9 @@ namespace TimetableManagementSystem
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(234, 243);
+            this.txtSearch.Location = new System.Drawing.Point(193, 237);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(276, 20);
+            this.txtSearch.Size = new System.Drawing.Size(118, 20);
             this.txtSearch.TabIndex = 10;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
@@ -163,7 +164,7 @@ namespace TimetableManagementSystem
             this.Slot,
             this.Day,
             this.Room});
-            this.DGWStaff.Location = new System.Drawing.Point(108, 281);
+            this.DGWStaff.Location = new System.Drawing.Point(50, 310);
             this.DGWStaff.Name = "DGWStaff";
             this.DGWStaff.Size = new System.Drawing.Size(743, 150);
             this.DGWStaff.TabIndex = 11;
@@ -213,7 +214,7 @@ namespace TimetableManagementSystem
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(163, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(126, 15);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(189, 60);
             this.pictureBox1.TabIndex = 21;
@@ -221,7 +222,7 @@ namespace TimetableManagementSystem
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(479, 445);
+            this.button1.Location = new System.Drawing.Point(384, 476);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 22;
@@ -229,11 +230,22 @@ namespace TimetableManagementSystem
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(335, 281);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(188, 16);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Active Courses on System";
+            // 
             // TeacherCourse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1038, 480);
+            this.ClientSize = new System.Drawing.Size(844, 511);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
@@ -282,5 +294,6 @@ namespace TimetableManagementSystem
         private System.Windows.Forms.DataGridViewTextBoxColumn Slot;
         private System.Windows.Forms.DataGridViewTextBoxColumn Day;
         private System.Windows.Forms.DataGridViewTextBoxColumn Room;
+        private System.Windows.Forms.Label label5;
     }
 }

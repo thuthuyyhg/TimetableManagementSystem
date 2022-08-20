@@ -60,6 +60,7 @@ namespace TimetableManagementSystem
             this.label9 = new System.Windows.Forms.Label();
             this.cbbRoom = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DGWStaff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -87,7 +88,7 @@ namespace TimetableManagementSystem
             // 
             this.txtCourseID.Location = new System.Drawing.Point(276, 86);
             this.txtCourseID.Name = "txtCourseID";
-            this.txtCourseID.Size = new System.Drawing.Size(406, 20);
+            this.txtCourseID.Size = new System.Drawing.Size(111, 20);
             this.txtCourseID.TabIndex = 2;
             // 
             // txtCourseName
@@ -231,7 +232,7 @@ namespace TimetableManagementSystem
             this.Slot,
             this.Day,
             this.Room});
-            this.DGWStaff.Location = new System.Drawing.Point(55, 484);
+            this.DGWStaff.Location = new System.Drawing.Point(54, 516);
             this.DGWStaff.Name = "DGWStaff";
             this.DGWStaff.Size = new System.Drawing.Size(739, 150);
             this.DGWStaff.TabIndex = 21;
@@ -349,11 +350,22 @@ namespace TimetableManagementSystem
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(317, 488);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(188, 16);
+            this.label10.TabIndex = 24;
+            this.label10.Text = "Active Courses on System";
+            // 
             // StaffTimetable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(842, 742);
+            this.ClientSize = new System.Drawing.Size(842, 699);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cbbRoom);
             this.Controls.Add(this.label9);
@@ -420,5 +432,6 @@ namespace TimetableManagementSystem
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cbbRoom;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label10;
     }
 }

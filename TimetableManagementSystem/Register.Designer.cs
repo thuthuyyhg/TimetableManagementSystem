@@ -232,7 +232,7 @@ namespace TimetableManagementSystem
             "Teacher"});
             this.cbbRole.Location = new System.Drawing.Point(210, 481);
             this.cbbRole.Name = "cbbRole";
-            this.cbbRole.Size = new System.Drawing.Size(200, 21);
+            this.cbbRole.Size = new System.Drawing.Size(97, 21);
             this.cbbRole.TabIndex = 20;
             // 
             // btnReg
@@ -304,6 +304,8 @@ namespace TimetableManagementSystem
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "D";
