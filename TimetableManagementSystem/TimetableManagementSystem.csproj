@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{87E4EFC8-999B-4D96-B3E4-824F8435AA66}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TimetableManagementSystem</RootNamespace>
+    <AssemblyName>TimetableManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HomepageStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomepageStaff.Designer.cs">
+      <DependentUpon>HomepageStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomepageStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomepageStudent.Designer.cs">
+      <DependentUpon>HomepageStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomepageTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomepageTeacher.Designer.cs">
+      <DependentUpon>HomepageTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffAccount.Designer.cs">
+      <DependentUpon>StaffAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffTimetable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffTimetable.Designer.cs">
+      <DependentUpon>StaffTimetable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentAccount.Designer.cs">
+      <DependentUpon>StudentAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentCourse.Designer.cs">
+      <DependentUpon>StudentCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentLoginAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentLoginAccount.Designer.cs">
+      <DependentUpon>StudentLoginAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentTimetable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentTimetable.Designer.cs">
+      <DependentUpon>StudentTimetable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentUserInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentUserInformation.Designer.cs">
+      <DependentUpon>StudentUserInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherAccount.Designer.cs">
+      <DependentUpon>TeacherAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherCourse.Designer.cs">
+      <DependentUpon>TeacherCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherLoginAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherLoginAccount.Designer.cs">
+      <DependentUpon>TeacherLoginAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherTimetable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherTimetable.Designer.cs">
+      <DependentUpon>TeacherTimetable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherUserInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherUserInformation.Designer.cs">
+      <DependentUpon>TeacherUserInformation.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="HomepageStaff.resx">
+      <DependentUpon>HomepageStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomepageStudent.resx">
+      <DependentUpon>HomepageStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomepageTeacher.resx">
+      <DependentUpon>HomepageTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffAccount.resx">
+      <DependentUpon>StaffAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffTimetable.resx">
+      <DependentUpon>StaffTimetable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentAccount.resx">
+      <DependentUpon>StudentAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentCourse.resx">
+      <DependentUpon>StudentCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentLoginAccount.resx">
+      <DependentUpon>StudentLoginAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentTimetable.resx">
+      <DependentUpon>StudentTimetable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentUserInformation.resx">
+      <DependentUpon>StudentUserInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherAccount.resx">
+      <DependentUpon>TeacherAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherCourse.resx">
+      <DependentUpon>TeacherCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherLoginAccount.resx">
+      <DependentUpon>TeacherLoginAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherTimetable.resx">
+      <DependentUpon>TeacherTimetable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherUserInformation.resx">
+      <DependentUpon>TeacherUserInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
